@@ -1,0 +1,2 @@
+# Binary-Tree
+In this assignment, you are supposed to implement an algebraic expression tree using the binary tree data structure. The data structure will represent a single arithmetic expression, which will be given into the constructor with a String parameter. In the constructor, this parameter will be parsed and a binary tree will be constructed. Then, a user will be able to perform tasks on the constructed tree, including expression evaluation, expression conversion, and tree display. 

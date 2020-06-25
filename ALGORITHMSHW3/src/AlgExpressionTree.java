@@ -1,7 +1,6 @@
 //-----------------------------------------------------
 // Title: Expression Tree
 // Author: Hilalnur Beral
-// ID: 11549136358
 // Section: 01
 // Assignment: 3
 // Description: This class defines a expression tree and its methods.Alll required methods and test cases are in this class.
@@ -138,7 +137,7 @@ public class AlgExpressionTree {
       
       private static int maximumLevel(Node node) {
             
-            // Treenin maximum levelinýný buluyor.
+            // Treenin maximum levelinÃ½nÃ½ buluyor.
             if (node == null) {
                return 0;
             }
@@ -146,7 +145,7 @@ public class AlgExpressionTree {
          }
       
       private static void whiteBoslukPrint(int count) {
-            //treeye göre whitespacleri yazdýrmak için
+            //treeye gÃ¶re whitespacleri yazdÃ½rmak iÃ§in
             for (int i = 0; i < count; i++)
                System.out.print(" ");
          }
@@ -192,21 +191,21 @@ public class AlgExpressionTree {
             
             for (Node nodeTree : nodes) {
                if (nodeTree != null) {
-                  System.out.print(nodeTree.valueD); //hangi deðere geldiyse onu bastýrýyor.
-                  YeniNodes.add(nodeTree.left); //ekleme yapýyor.
-                  YeniNodes.add(nodeTree.right); //ekleme yapýyor.
+                  System.out.print(nodeTree.valueD); //hangi deÃ°ere geldiyse onu bastÃ½rÃ½yor.
+                  YeniNodes.add(nodeTree.left); //ekleme yapÃ½yor.
+                  YeniNodes.add(nodeTree.right); //ekleme yapÃ½yor.
                } else {
                   
-                  YeniNodes.add(null);   // Eðer deðer yoksa null ekliyor .
+                  YeniNodes.add(null);   // EÃ°er deÃ°er yoksa null ekliyor .
                   
-                  YeniNodes.add(null);    // Eðer deðer yoksa null ekliyor ve boþluk bastýrýyor.
+                  YeniNodes.add(null);    // EÃ°er deÃ°er yoksa null ekliyor ve boÃ¾luk bastÃ½rÃ½yor.
                   
-                  System.out.print(" ");  //Boþluk bastýrýyor.
+                  System.out.print(" ");  //BoÃ¾luk bastÃ½rÃ½yor.
                }
          
                whiteBoslukPrint(betweenSpacesTree); //Arrange the whitespaces between nodes.
             }
-            System.out.println(""); // Yeni line'a geçmemizi saðlýyor.
+            System.out.println(""); // Yeni line'a geÃ§memizi saÃ°lÃ½yor.
          
             for (int hilal = 1; hilal <= edgeLinesTree; hilal++) { // It traverses according to edge lines.
               
@@ -218,7 +217,7 @@ public class AlgExpressionTree {
                      continue;
                   }
          
-                  if (nodes.get(j).left != null) //Nodeun lefti null deðilse left için bir tane çizgi bastýrýyor.
+                  if (nodes.get(j).left != null) //Nodeun lefti null deÃ°ilse left iÃ§in bir tane Ã§izgi bastÃ½rÃ½yor.
                         
                         
                      System.out.print("/");
@@ -227,7 +226,7 @@ public class AlgExpressionTree {
          
                   whiteBoslukPrint(hilal + hilal - 1);
          
-                  if (nodes.get(j).right != null)  //Nodeun righti null deðilse left için bir tane çizgi bastýrýyor.
+                  if (nodes.get(j).right != null)  //Nodeun righti null deÃ°ilse left iÃ§in bir tane Ã§izgi bastÃ½rÃ½yor.
                      System.out.print("\\");
                   else
                      whiteBoslukPrint(1);
@@ -235,13 +234,13 @@ public class AlgExpressionTree {
                   whiteBoslukPrint(edgeLinesTree + edgeLinesTree - hilal);
                }
          
-               System.out.println(""); //Baþka line'a geçiyor.
+               System.out.println(""); //BaÃ¾ka line'a geÃ§iyor.
             }
          
-            nonLeafNodePrint(YeniNodes, level + 1, maxLevel); // // Leveli bir arttýrýyoruz, yeni node alýyoruz.
+            nonLeafNodePrint(YeniNodes, level + 1, maxLevel); // // Leveli bir arttÃ½rÃ½yoruz, yeni node alÃ½yoruz.
          }
       
-      private static void bastýrNode(Node root) {
+      private static void bastÃ½rNode(Node root) {
             //--------------------------------------------------------
             // Summary: This method calculates maximum level of root (by calling maxLevel() function and add roots to the list.Then it calls  NonLeafNodePrint function. 
              // Precondition: root is type of Node
@@ -255,7 +254,7 @@ public class AlgExpressionTree {
             
             rootList.add(root);
             
-            nonLeafNodePrint(rootList, 1, maxLevel); //1.leveldan max level'a kadar ilerliyoruz.rootList nodelar ý tutuyor.
+            nonLeafNodePrint(rootList, 1, maxLevel); //1.leveldan max level'a kadar ilerliyoruz.rootList nodelar Ã½ tutuyor.
          }
       public void displayTree()
          {
@@ -265,7 +264,7 @@ public class AlgExpressionTree {
             // Postcondition: Tree is displayed properly..
             //-------------------------------------------------------
             // now body of the method...
-            bastýrNode(root);
+            bastÃ½rNode(root);
          }
       
 
